@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Amarnath Murugan | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,19 +19,20 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1>Stellar</h1>
-						<p>Just another free, fully responsive site template<br />
-						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+						<h1>Amarnath Murugan</h1>
+						<h2>XR Researcher | Game Developer </h2>
+						<!-- built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p> -->
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">First Section</a></li>
-							<li><a href="#second">Second Section</a></li>
-							<li><a href="#cta">Get Started</a></li>
+							<li><a href="#intro" class="active">About Me</a></li>
+							<li><a href="#first">Projects</a></li>
+							<li><a href="#second">Publications</a></li>
+							<li><a href="#cta">CV</a></li>
+							<li><a href="#footer">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -43,44 +44,70 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Ipsum sed adipiscing</h2>
+											<h2>Hi there! I'm Amarnath</h2>
 										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
+										<p>I am a research assistant at IDC School of Design, IIT Bombay. I recently graduated 
+										with a bachelor's in Computer Science and have been working on AR/VR and game dev over
+										three years. Previously I was a student ambassador for Unity 3D and team lead for the Extended Reality research group at <a href="https://nextech.io/home" >Next Tech Lab</a>.
+										<br> <br>
+										My primary research interest is to identify and improve the aspects of VR that would
+										increase the overall quality of experience. Currently, I am researching on approaches to conveying coherent narratives in Live-Action VR films. Moving forward, I hope to 
+										focus on digital humans, cognition, and embodiment in immersive environments.
+										
+										
+										  </p>
+										<!-- <ul class="actions">
 											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
+										</ul> -->
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/profile pic.jpg" alt="" /></span>
 								</div>
 							</section>
 
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Magna veroeros</h2>
+									<h2>Projects</h2>
 								</header>
 								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									<li onclick="document.getElementById('id01').style.display='block'">
+										<span class="image"><img src="images/Cine.JPG" alt=""  /></span>
+										<h3>Cinévoqué</h3>
+										<p>A passively responsive real-time framework for live-action Cinematic VR</p>
 									</li>
 									<li>
 										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
+										<h3>ScholAR</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
 										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
+										<h3>Procedural Terrains in VR</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 								</ul>
+								
+								<div id="id01" class="w3-modal">
+										<div class="w3-modal-content w3-animate-opacity w3-card-4">
+											<header > 
+												<span onclick="document.getElementById('id01').style.display='none'" 
+												class="button">&times;</span>
+												<h2>Modal Header</h2>
+											</header>
+											<div >
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla deleniti tempora praesentium. Qui, accusantium laborum. Perspiciatis labore incidunt vitae nulla quasi dolor vero cupiditate esse enim nihil, id quam alias?</p>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur doloremque nihil voluptatibus nam asperiores fugit. Minima aliquid asperiores, tenetur eos, vitae quis excepturi beatae cumque nam iure eum aliquam est!</p>
+												
+											</div>
+										 
+										</div>
+								</div>
+								
+							
+
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="generic.html" class="button">View More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -88,38 +115,36 @@
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Publications</h2>
+									<!-- <p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
+									posuere. Nulla massa urna, fermentum eget quam aliquet.</p> -->
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
+								<ul style="text-align: justify;">
+									
+									<li>
+										<p><strong> Murugan, Amarnath</strong>, Jayesh S. Pillai, and Amal Dev. "Cinévoqué: Development of a Passively Responsive Framework for Seamless Evolution of Experiences in Immersive Live-Action Movies." 25th ACM Symposium on Virtual Reality Software and Technology. ACM, 2019.</p>
 									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
+
+									<li>
+										<p>Pillai, Jayesh S., Amal Dev, and <strong> Amarnath Murugan</strong>. "Till We Meet Again: A Cinévoqué Experience." The 17th International Conference on Virtual-Reality Continuum and its Applications in Industry. ACM, 2019.</p>
 									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
+
+									<li>
+										<p><strong> Murugan, Amarnath</strong>, Ganesh A. Balaji, and R. Rajkumar. "AnatomyMR: A Multi-User Mixed Reality Platform for Medical Education." Journal of Physics: Conference Series. Vol. 1362. No. 1. IOP Publishing, 2019.</p>
 									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
+
+									<li>
+										<p>Pillai, Jayesh S., <strong> Amarnath Murugan</strong>, and Amal Dev. "Cinévoqué: Design of a Passively Responsive Framework for Seamless Evolution of Experiences in Immersive Live-Action Movies." IFIP Conference on Human-Computer Interaction. Springer, Cham, 2019.</p>
+									</li>	
+									
+
 								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
+								<!-- <p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p> -->
+								<!-- <footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
-								</footer>
+								</footer> -->
 							</section>
 
 						<!-- Get Started -->
