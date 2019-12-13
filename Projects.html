@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects | Amarnath Murugan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Projects</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+						<section class="main special">
+							 
+								
+
+								<!-- Image -->
+									<section>
+										<ul class="features">
+
+											<!-- Cinevoque -->
+											<li onclick="document.getElementById('cinevoque').style.display='block'">
+												<span class="image"><img src="images/featured projects/cinevoque/Cine.JPG" alt=""  /></span>
+												<h3>Cinévoqué</h3>
+												<p id="timeframe">June 2018 - ongoing</p>
+												<p>A passively responsive real-time framework for live-action Cinematic VR</p>
+												
+											</li>
+
+											<!-- ScholAR -->
+											<li onclick="document.getElementById('ScholAR').style.display='block'">
+												<span class="image"><img src="images/featured projects/Scholar/icon.jpg" alt=""  /></span>
+												<h3>ScholAR</h3>
+												<p id="timeframe">June 2018 - ongoing</p>
+												<p>Research project that aims to make affordable AR based educational solutions for underserved kids in rural India</p>
+											</li>
+
+											<!-- Procedural -->
+											<li onclick="document.getElementById('Procedural').style.display='block'">
+												<span class="image"><img src="images/featured projects/procedural/icon.jpg" alt=""  /></span>
+												<h3>Visual Intuition for music in VR</h3>
+												<p id="timeframe">August 2019 - ongoing</p>
+												<p>Exploratory project that alters the virutal environment based on inputs from musical instruments, to create a visual intuition for music theory</p>
+											</li>
+
+											<!-- Gro -->
+											<li onclick="document.getElementById('Gro').style.display='block'">
+												<span class="image"><img src="images/featured projects/gro/gro.jpg" alt=""  /></span>
+													<h3>Gro</h3>
+													<p id="timeframe">September 2019</p>
+													<p> Design of a digital ID card for school kids that doubles up as a banking device.  </p>
+											</li>
+
+											<!-- AdsXR -->
+											<li onclick="document.getElementById('adsxr').style.display='block'">
+													<span class="image"><img src="images/featured projects/adsXR/icon.jpg" alt=""  /></span>
+													<h3>AdsXR</h3>
+													<p id="timeframe">October 2019</p>
+													<p>An Ad placement asset for AR/VR with a dynamic pricing model</p>
+											</li>
+
+											<!-- ARtifacts -->
+											<li onclick="document.getElementById('artifacts').style.display='block'">
+												<span class="image"><img src="images/featured projects/artifacts/team.jpg" alt=""  /></span>
+													<h3>ARtifacts</h3>
+													<p id="timeframe">April 2017</p>
+													<p>Android app that leverages AR and VR for improving museum experiences - Hackathon winner </p>
+											</li>
+
+										
+
+											<!-- test -->
+											<li onclick="document.getElementById('Procedural').style.display='block'">
+													<span class="icon major style5 fa-gem"></span>
+													<h3>Visual Intuition for music in VR</h3>
+													<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda magnam atque possimus, perferendis doloremque tenetur </p>
+											</li>
+
+										</ul>
+									
+										<!-- modals -->
+								<div id="cinevoque" class="w3-modal">
+									<div class="w3-modal-content w3-animate-opacity w3-card-4">
+										<header > 
+											<span onclick="document.getElementById('cinevoque').style.display='none'" 
+											class="button">&times;</span>
+											<h2>Cinévoqué</h2>
+										</header>
+										<div >
+												<h3>Background</h3>
+												<p>This is an ongoing project that has been in the works since summer 2018. It started as part of my internship under the guidance of Prof. Jayesh Pillai and in collaboration with my colleague and filmmaker, <a href="https://www.behance.net/Amaldevc" target="_blank">Amal Dev</a> . We were initially exploring the idea of dynamically altering the visuals of a VR film in areas that are beyond the field of view of the viewer. This approach led to the current framework, Cinévoqué, whose name is a portmanteau of the words Cinema and Evoke, which espouses the ability of the framework to evoke a narrative that corresponds to the viewer's gaze behavior over the course of the movie.
+												<br>
+												<h3>Introduction</h3>
+												Virtual Reality as a medium of storytelling is relatively less developed than storytelling in traditional films. The viewer is empowered with the ability to change the framing in VR, and they may not follow all the points of interest intended by the storyteller.  As a result, the filmmaking and storytelling practices of traditional films do not directly translate. Researchers and filmmakers have studied how people watch VR films and have suggested guidelines to nudge the viewer to follow along with the story. However, the viewers are still in control, and they can consciously choose to rebel against such nudges.  Accounting for this, and taking advantage of the affordances of VR, Cinévoqué alters the narrative shown to the viewers based on the events of the movie they have followed or missed. Furthermore, it also estimates their interest in particular events by measuring the time they spend gazing at it and shows them an appropriate storyline. Consequently, the experience doesn't have to be interrupted for the viewer to make conscious choices about the storyline branching, unlike existing interactive VR films. <br>
+							
+												<div class="imgcontainer">
+														<img src="images/featured projects/cinevoque/multiple storyline.jpg" alt="" />
+												</div>
+											
+												This project is being built as a plugin for Unity 3D that could be used by filmmakers to create a responsive live-action immersive film. We have chosen to focus on live-action film over real-time 3d movies as passively responsive narratives have been explored in the context of games and interactive experiences previously. Additionally, the technical implementation is more novel in the case of live-action films as the content (videos) cannot be changed dynamically like real-time rendered scenes.
+												
+												Using a game engine such as unity to power live-action Cinemative VR brings forth extra features that weren't implementable before, for example, we could add a virtual body that orients to the viewer's physical body by using rotational data from 6DOF controllers, which allow for the viewer to be a more integrated character in the narrative than before. 
+												<br><br>
+												To learn more about the design and implementation of the framework please refer to my publications. We had the opportunity to present our work at reputed international conferences such as VRST, VRCAI and INTERACT. We have also been invited  speakers at national and international events such as SIGCHI Asian Symposium, UNITE India and IndiaHCI.  
+												<div class="imgcontainer">
+													<img src="images/featured projects/cinevoque/unite.jpg" alt="" />
+													<img src="images/featured projects//cinevoque/vrst-1.jpg" alt="" />
+												</div>
+											</div>
+
+									</div>			
+								</div>
+								
+								<div id="ScholAR" class="w3-modal">
+										<div class="w3-modal-content w3-animate-opacity w3-card-4">
+											<header > 
+												<span onclick="document.getElementById('ScholAR').style.display='none'" 
+												class="button">&times;</span>
+												<h2>ScholAR</h2>
+											</header>
+											<div >
+												<p>
+														ScholAR is a research project that is exploring how effective AR-based educational content can be democratized and deployed in schools, especially in rural schools. The project is being undertaken as part of Pratiti Sarkar's Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
+												</p>
+												<p>
+														The school kids who used the application are either seeing AR for the first time (in the case of urban schools), or handling a tablet itself for the first time (at rural schools), so we had to design the experience around this constraint. For the rural schoolkids, the app had minimal UI, and most of the interactions were gesture-based. The application was also built such that all the interactions were logged and stored for analysis.  The project had investigated how the differnet stakeholders in a child's education perceive the usage of AR in schools and their expectations. Furthermore, experiments were conducted to understand the group dynamics fostered while using AR in a collaborative learning environment. 
+														<div class="imgcontainer">		
+																													
+																<img src="images/featured projects/Scholar/image--010.jpg" alt="" style="width: 34%;" /> 
+																<img src="images/featured projects/Scholar/image--012.jpg" alt="" style="width: 34%;" />	
+																<img src="images/featured projects/Scholar/image--014.jpg" alt=""  style="width: 34%;"/> 														
+													   </div>
+												</p>
+												<p>
+														With results obtained from these studies, the project will is moving towards a deployable solution, wherein technical constraints that impede scalaiblity are being addressed.
+
+												</p>
+											
+											</div>										
+										</div>			
+								</div>
+							
+								<div id="Procedural" class="w3-modal">
+										<div class="w3-modal-content w3-animate-opacity w3-card-4">
+											<header > 
+												<span onclick="document.getElementById('Procedural').style.display='none'" 
+												class="button">&times;</span>
+												<h2>Visual Intuition for music in VR</h2>
+											</header>
+											<div >
+												<p> 
+													<h3>Background</h3>
+
+														This project was started during Prof Jayesh Pillai's VR course; after I joined IDC School of Design as an RA. While assisting the M.Des student groups with project development, I got the opportunity to join one of them and work on this project. 
+														My teammates  <a href="https://www.behance.net/Maulashree" target="_blank">Maulashree Shanbhag</a> and <a href="https://rishivanukuru.com/" target="_blank">Rishi Vanukuru</a> and I wanted to explore the possibility of creating a visual intuition for music theory by immersing users into an experience where the virtual environment changes according to the music played by the user.
+														<br><br>											
+													<h3>implementation</h3>
+
+														We used an HTC VIVE with leap motion, and an extra vive tracker attached to the keyboard for aligning the virtual and physical keyboard, the midi data from the same was sent to our application to provide feedback.
+														 
+														<br><br>
+														<div class="imgcontainer">
+															<img src="images/featured projects/procedural/setup.jpeg" alt="" />
+														</div>
+														<br>	
+														The experience consists of two levels.Initially, to onboard the user, an underwater environment is shown with the virtual keyboard in front of them; when they press a key, a school of fish is spawned, which is driven by the BOIDS algorithm. 
+														As the user continues to play the instrument, the school changes its location accordingly to indicate that they are affected by the input. Once the user is comfortable with the experience, we move them to the next level, where they surface near an archipelago. Each island is mapped to an octave, and the topology of the island changes when a key within its octave is pressed.  
+														<br><br>
+															<div class="imgcontainer">
+																<video width="50%" autoplay loop>
+																	<source src="images/featured projects/procedural/demo.m4v" type="video/mp4">
+																
+																Your browser does not support the video tag.
+																</video>
+															</div>
+														<br>
+													<h3>Future Work</h3>
+														The project is a work in progress. We would like to add more features and improve the quality of the experience. For the technical side, I am planning to implement this with recent features of unity such as, ECS, Job System and the Burst Compiler for possible optimizations. We also intended to do a more rigorous literature review for finding better mappings between the keyboard inputs and terrain modifications. 
+
+												</p>
+											</div>										
+										</div>			
+								</div>
+									
+								<div id="Gro" class="w3-modal">
+										<div class="w3-modal-content w3-animate-opacity w3-card-4">
+											<header > 
+												<span onclick="document.getElementById('Gro').style.display='none'" 
+												class="button">&times;</span>
+												<h2>Gro</h2>
+											</header>
+											<div >
+												<p>
+													Gro is a concept that was formulated during Prof Anirudha Joshi's <a href="http://www.idc.iitb.ac.in/~anirudha/HCI19_09/" target="_blank">Monsoon HCI Course</a> at IIT Bombay. It is an intensive two-week course offered to professionals as part of the institute's Continuing Education Program. I was one of the student volunteers, so my responsibilities included participant recruitments and dealing with some aspects of logistics. Otherwise, I had the same opportunities as the participants of the course. I was assigned to a group consisting of a Product Manager, Tech Lead, and two designers; over the two weeks, we were tasked with proposing a solution that would inculcate financial literacy to kids.
+												<br><br>	
+												During the first week, we were taught about the UX process and models. We learned about identifying problems through contextual interviews and consolidating data from these interviews through affinity mapping. My team interviewed a variety of people who would possibly be involved with the financial aspects of a child, so our interviewees included parents, teachers, kids, and bank officials. Post interviews, our affinity mapping brought out some interesting insights; for example, we noticed that parents are interested in teaching financial literacy to their children, but they rarely allow their kids to handle money and make independent decisions about their spendings. 
+												<br>
+												
+													<div class="imgcontainer">
+														<img src="images/featured projects/gro/Affinity.jpeg" alt="" />
+													</div>
+													
+										
+												<br>
+												With the data aggregated from affinity, we moved on to prototyping and evaluation in the second week. We ideated around the concerns and constraints that were brought out and arrived at the concept of a digital school ID card. To prototype and better convey our idea, I created an AR application that displays our UI over an actual ID card. Heuristic evaluation was conducted to address issues with the design we had. At the end of the course, we presented our final concept, along with personas and scenarios. The course gave me a deeper understanding of the UX process, and working alongside experienced professionals was a very valuable exposure. 
+													<br>
+													<div class="imgcontainer" >
+														<img src="images/featured projects/gro/ar.gif" alt="" style="width:20%;"/>
+													</div>
+													
+												</p>
+											</div>										
+										</div>			
+								</div>
+		
+								<div id="adsxr" class="w3-modal">
+									<div class="w3-modal-content w3-animate-opacity w3-card-4">
+										<header > 
+											<span onclick="document.getElementById('adsxr').style.display='none'" 
+											class="button">&times;</span>
+											<h2>AdsXR</h2>
+										</header>
+										<div >
+											<p>
+													AR/VR is gaining traction in the commercial sector, and content creators in the medium are left with limited options in monetizing their experiences. I made AdsXR as a POC that could serve as a possible solution to this problem. The project was undertaken as part of Accenture's Hack Your Reality hackathon, where one of the themes was immersive marketing. This idea was one of the hundred or so shortlisted submissions from over two thousand. 
+											</p>
+
+											<p>
+													AdsXR aims to serve as a platform for selling ads for virtual real estate created in immersive experiences.  It is platform agnostic and can be integrated with both mobile AR/VR and within high-end VR or MR systems. The project address two issues with the current state of immersive marketing. The first is to open up a new revenue stream for developers and content creators of immersive content, which would allow them to enjoy the same luxury the smartphone market is leveraging. The second issue is that any company looking to use Ar/Vr for advertising has to invest in XR development of some sort and allocate extra resources to it. This platform could help solve this issue and exist as a one-stop solution to buy ads in Ar/Vr applications.
+													<div class="imgcontainer">
+														<img src="images/featured projects/adsXR/Snapshot1.jpg" alt="" /> 
+															
+															
+													</div>
+											</p>
+
+											<p>
+													The locations where these ads are shown is determined by the content creators; they could mark the 3D models of posters, billboards, newspapers, etc. as an advertisement, an AdsXR would dynamically apply a texture of an Ad during runtime to these models. The asset also tracks the user gaze to measure the amount of time the user spends looking at the location of these Ads and uses this data to adjust to the cost of placing an advertisement at the spot. The asset is made for Unity, and the site which allows for buying the Ads was also made in unity and exported as a WebGL application. The data from unity was stored in a database, and the communication was done through PHP and SQL. The technical architecture of the asset is as follows:
+
+													<div class="imgcontainer">
+													 <img src="images/featured projects/adsXR/architecture.jpg" alt="" /> 
+															
+															
+													</div>
+													
+
+											</p>
+										</div>										
+									</div>			
+								</div>
+								
+								<div id="artifacts" class="w3-modal">
+										<div class="w3-modal-content w3-animate-opacity w3-card-4">
+											<header > 
+												<span onclick="document.getElementById('artifacts').style.display='none'" 
+												class="button">&times;</span>
+												<h2>ARtifacts</h2>
+											</header>
+											<div >
+												<p>
+														Smart India Hackathon 2017, the first edition of the competition conducted by the Indian government, was the largest hackathon in the world when it happened. The issues faced by each ministry of the government that could be solved with tech were put forth as problem statements for this hackathon. Me and five other members of Next Tech Lab formed a team and chose the problem statement, "Smart solution for providing commentary of exhibits in Museum in India."
+												</p>	
+												<p>
+														We initially considered the usual approach of using sensors to trigger commentary for each exhibit, but after analyzing the cost of implementation and maintenance, and issues with scalability, we decided against it. Instead, we chose to go with a QR code for each exhibit, which, when scanned, would display information about the same and start the commentary.  Our app also maintained a floor plan of the museum with the position of each exhibit. They were highlighted in different colors to show if the visitor has seen them. This system also helped us estimate the visitor's location within the museum and opened up the possibility of providing better navigational instructions. 
+												</p>	
+												<p>
+														All six of us were part of the AR/VR research group within Next Tech, so we understood the value these mediums would bring to a museum experience. So our other use cases for the hack included: 
+													<ul>
+														<li>superimposing a reconstructed digital twin on a damaged artifacts.</li>
+														<li>Recreating the working mechanisms of old machinery and events in AR and VR</li>														
+													</ul>
+														I was responsible for implementing the code architecture that would combine the modules my teammates, and I have worked on, unsurprisingly I had to deal with many bugs and pull an all-nighter to get everything working. 
+														The above-mentioned use cases, along with relatively our low-cost solution, gave us an edge over the other teams. Ultimately, it led to our first hackathon win.
+												</p>
+												<p>		
+														The final demo: 
+														<div class="imgcontainer">	
+														<iframe width="560" height="315" style="padding: 0%;" src="https://www.youtube.com/embed/XP-QVg8O-Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+														</div>
+														 <br>
+
+														Our win even got us some attention from the press!
+														
+														<div class="imgcontainer">		
+																													
+																 <img src="images/featured projects/artifacts/IMG-20170519-WA0000.jpg" alt="" style="width: 34%;" /> 
+																 <img src="images/featured projects/artifacts/IMG-20170417-WA0000.jpg" alt="" style="width: 34%;" />	
+																 <img src="images/featured projects/artifacts/IMG-20170421-WA0004.jpg" alt=""  style="width: 34%;"/> 														
+														</div>
+													
+
+												</p>
+												<p>	
+														if you're interested in learning more about our journey, do go though this article written by my teammate: <a href="https://medium.com/syntechx/tackling-inconveniences-and-winning-the-worlds-largest-hackathon-a-detailed-account-a2d5997ef9a4?" target="_blank">Tackling inconveniences and winning the world’s largest hackathon: A detailed account</a>
+														
+												</p>
+											</div>										
+										</div>			
+								</div>
+
+								<div id="test" class="w3-modal">
+									<div class="w3-modal-content w3-animate-opacity w3-card-4">
+										<header > 
+											<span onclick="document.getElementById('test').style.display='none'" 
+											class="button">&times;</span>
+											<h2>test</h2>
+										</header>
+										<div >
+											<p>This is an ongoing project that has been in the works since summer 2018. It started as part of my internship under the guidance of Prof. Jayesh Pillai. We were initially exploring the idea of dynamically altering the visuals of a VR film in areas that are beyond the field of view of the viewer. This approach led to the current framework, Cinévoqué, whose name is a portmanteau of the words Cinema and Evoke, which espouses the ability of the framework to evoke a narrative that corresponds to the viewer's gaze behavior over the course of the movie.
+											</p>
+										</div>										
+									</div>			
+								</div>
+
+									
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="index.html" class="button">Back</a></li>
+									</ul>
+								</footer>
+									</section>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

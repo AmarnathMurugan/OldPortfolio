@@ -51,7 +51,7 @@
 										three years. Previously I was a student ambassador for Unity 3D and team lead for the Extended Reality research group at <a href="https://nextech.io/home" >Next Tech Lab</a>.
 										<br> <br>
 										My primary research interest is to identify and improve the aspects of VR that would
-										increase the overall quality of experience. Currently, I am researching on approaches to conveying coherent narratives in Live-Action VR films. Moving forward, I hope to 
+										increase the overall quality of experience in the medium. Currently, I am researching on passively interactive approaches to conveying coherent narratives in Live-Action VR films. Moving forward, I hope to 
 										focus on digital humans, cognition, and embodiment in immersive environments.
 										
 										
@@ -67,47 +67,141 @@
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Projects</h2>
+									<h2>Featured Projects</h2>
 								</header>
 								<ul class="features">
-									<li onclick="document.getElementById('id01').style.display='block'">
-										<span class="image"><img src="images/Cine.JPG" alt=""  /></span>
-										<h3>Cinévoqué</h3>
-										<p>A passively responsive real-time framework for live-action Cinematic VR</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>ScholAR</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Procedural Terrains in VR</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
+										<!-- Cinevoque -->
+										<li onclick="document.getElementById('cinevoque').style.display='block'">
+												<span class="image"><img src="images/featured projects/cinevoque/Cine.JPG" alt=""  /></span>
+												<h3>Cinévoqué</h3>
+												<p id="timeframe">June 2018 - ongoing</p>
+												<p>A passively responsive real-time framework for live-action Cinematic VR</p>
+												
+											</li>
+
+											<!-- ScholAR -->
+											<li onclick="document.getElementById('ScholAR').style.display='block'">
+												<span class="image"><img src="images/featured projects/Scholar/icon.jpg" alt=""  /></span>
+												<h3>ScholAR</h3>
+												<p id="timeframe">June 2018 - ongoing</p>
+												<p>Research project that aims to make affordable AR based educational solutions for underserved kids in rural India</p>
+											</li>
+
+											<!-- Procedural -->
+											<li onclick="document.getElementById('Procedural').style.display='block'">
+												<span class="image"><img src="images/featured projects/procedural/icon.jpg" alt=""  /></span>
+												<h3>Visual Intuition for music in VR</h3>
+												<p id="timeframe">August 2019 - ongoing</p>
+												<p>Exploratory project that alters the virutal environment based on inputs from musical instruments, to create a visual intuition for music theory</p>
+											</li>
 								</ul>
-								
-								<div id="id01" class="w3-modal">
+								<!-- modals -->
+								<div id="cinevoque" class="w3-modal">
 										<div class="w3-modal-content w3-animate-opacity w3-card-4">
 											<header > 
-												<span onclick="document.getElementById('id01').style.display='none'" 
+												<span onclick="document.getElementById('cinevoque').style.display='none'" 
 												class="button">&times;</span>
-												<h2>Modal Header</h2>
+												<h2>Cinévoqué</h2>
 											</header>
 											<div >
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla deleniti tempora praesentium. Qui, accusantium laborum. Perspiciatis labore incidunt vitae nulla quasi dolor vero cupiditate esse enim nihil, id quam alias?</p>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur doloremque nihil voluptatibus nam asperiores fugit. Minima aliquid asperiores, tenetur eos, vitae quis excepturi beatae cumque nam iure eum aliquam est!</p>
-												
-											</div>
-										 
-										</div>
-								</div>
+													<h3>Background</h3>
+													<p>This is an ongoing project that has been in the works since summer 2018. It started as part of my internship under the guidance of Prof. Jayesh Pillai and in collaboration with my colleague and filmmaker, <a href="https://www.behance.net/Amaldevc" target="_blank">Amal Dev</a> . We were initially exploring the idea of dynamically altering the visuals of a VR film in areas that are beyond the field of view of the viewer. This approach led to the current framework, Cinévoqué, whose name is a portmanteau of the words Cinema and Evoke, which espouses the ability of the framework to evoke a narrative that corresponds to the viewer's gaze behavior over the course of the movie.
+													<br>
+													<h3>Introduction</h3>
+													Virtual Reality as a medium of storytelling is relatively less developed than storytelling in traditional films. The viewer is empowered with the ability to change the framing in VR, and they may not follow all the points of interest intended by the storyteller.  As a result, the filmmaking and storytelling practices of traditional films do not directly translate. Researchers and filmmakers have studied how people watch VR films and have suggested guidelines to nudge the viewer to follow along with the story. However, the viewers are still in control, and they can consciously choose to rebel against such nudges.  Accounting for this, and taking advantage of the affordances of VR, Cinévoqué alters the narrative shown to the viewers based on the events of the movie they have followed or missed. Furthermore, it also estimates their interest in particular events by measuring the time they spend gazing at it and shows them an appropriate storyline. Consequently, the experience doesn't have to be interrupted for the viewer to make conscious choices about the storyline branching, unlike existing interactive VR films. <br>
 								
-							
+													<div class="imgcontainer">
+															<img src="images/featured projects/cinevoque/multiple storyline.jpg" alt="" />
+													</div>
+												
+													This project is being built as a plugin for Unity 3D that could be used by filmmakers to create a responsive live-action immersive film. We have chosen to focus on live-action film over real-time 3d movies as passively responsive narratives have been explored in the context of games and interactive experiences previously. Additionally, the technical implementation is more novel in the case of live-action films as the content (videos) cannot be changed dynamically like real-time rendered scenes.
+													
+													Using a game engine such as unity to power live-action Cinemative VR brings forth extra features that weren't implementable before, for example, we could add a virtual body that orients to the viewer's physical body by using rotational data from 6DOF controllers, which allow for the viewer to be a more integrated character in the narrative than before. 
+													<br><br>
+													To learn more about the design and implementation of the framework please refer to my publications. We had the opportunity to present our work at reputed international conferences such as VRST, VRCAI and INTERACT. We have also been invited  speakers at national and international events such as SIGCHI Asian Symposium, UNITE India and IndiaHCI.  
+													<div class="imgcontainer">
+														<img src="images/featured projects/cinevoque/unite.jpg" alt="" />
+														<img src="images/featured projects//cinevoque/vrst-1.jpg" alt="" />
+													</div>
+												</div>
+	
+										</div>			
+									</div>
+									
+									<div id="ScholAR" class="w3-modal">
+											<div class="w3-modal-content w3-animate-opacity w3-card-4">
+												<header > 
+													<span onclick="document.getElementById('ScholAR').style.display='none'" 
+													class="button">&times;</span>
+													<h2>ScholAR</h2>
+												</header>
+												<div >
+													<p>
+															ScholAR is a research project that is exploring how effective AR-based educational content can be democratized and deployed in schools, especially in rural schools. The project is being undertaken as part of Pratiti Sarkar's Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
+													</p>
+													<p>
+															The school kids who used the application are either seeing AR for the first time (in the case of urban schools), or handling a tablet itself for the first time (at rural schools), so we had to design the experience around this constraint. For the rural schoolkids, the app had minimal UI, and most of the interactions were gesture-based. The application was also built such that all the interactions were logged and stored for analysis.  The project had investigated how the differnet stakeholders in a child's education perceive the usage of AR in schools and their expectations. Furthermore, experiments were conducted to understand the group dynamics fostered while using AR in a collaborative learning environment. 
+															<div class="imgcontainer">		
+																														
+																	<img src="images/featured projects/Scholar/image--010.jpg" alt="" style="width: 34%;" /> 
+																	<img src="images/featured projects/Scholar/image--012.jpg" alt="" style="width: 34%;" />	
+																	<img src="images/featured projects/Scholar/image--014.jpg" alt=""  style="width: 34%;"/> 														
+														   </div>
+													</p>
+													<p>
+															With results obtained from these studies, the project will is moving towards a deployable solution, wherein technical constraints that impede scalaiblity are being addressed.
+	
+													</p>
+												
+												</div>										
+											</div>			
+									</div>
+								
+									<div id="Procedural" class="w3-modal">
+											<div class="w3-modal-content w3-animate-opacity w3-card-4">
+												<header > 
+													<span onclick="document.getElementById('Procedural').style.display='none'" 
+													class="button">&times;</span>
+													<h2>Visual Intuition for music in VR</h2>
+												</header>
+												<div >
+													<p> 
+														<h3>Background</h3>
+	
+															This project was started during Prof Jayesh Pillai's VR course; after I joined IDC School of Design as an RA. While assisting the M.Des student groups with project development, I got the opportunity to join one of them and work on this project. 
+															My teammates  <a href="https://www.behance.net/Maulashree" target="_blank">Maulashree Shanbhag</a> and <a href="https://rishivanukuru.com/" target="_blank">Rishi Vanukuru</a> and I wanted to explore the possibility of creating a visual intuition for music theory by immersing users into an experience where the virtual environment changes according to the music played by the user.
+															<br><br>											
+														<h3>implementation</h3>
+	
+															We used an HTC VIVE with leap motion, and an extra vive tracker attached to the keyboard for aligning the virtual and physical keyboard, the midi data from the same was sent to our application to provide feedback.
+															 
+															<br><br>
+															<div class="imgcontainer">
+																<img src="images/featured projects/procedural/setup.jpeg" alt="" />
+															</div>
+															<br>	
+															The experience consists of two levels.Initially, to onboard the user, an underwater environment is shown with the virtual keyboard in front of them; when they press a key, a school of fish is spawned, which is driven by the BOIDS algorithm. 
+															As the user continues to play the instrument, the school changes its location accordingly to indicate that they are affected by the input. Once the user is comfortable with the experience, we move them to the next level, where they surface near an archipelago. Each island is mapped to an octave, and the topology of the island changes when a key within its octave is pressed.  
+															<br><br>
+																<div class="imgcontainer">
+																	<video width="50%" autoplay loop>
+																		<source src="images/featured projects/procedural/demo.m4v" type="video/mp4">
+																	
+																	Your browser does not support the video tag.
+																	</video>
+																</div>
+															<br>
+														<h3>Future Work</h3>
+															The project is a work in progress. We would like to add more features and improve the quality of the experience. For the technical side, I am planning to implement this with recent features of unity such as, ECS, Job System and the Burst Compiler for possible optimizations. We also intended to do a more rigorous literature review for finding better mappings between the keyboard inputs and terrain modifications. 
+	
+													</p>
+												</div>										
+											</div>			
+									</div>
 
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">View More</a></li>
+										<li><a href="Projects.html" class="button">View More</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -150,14 +244,13 @@
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>CV</h2>
+									<p>Thank you for your interest in my profile, you can find my CV <a href="Amarnath CV.pdf">here</a>.</p>
 								</header>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<!-- <li><a href="Amarnath CV.pdf" class="button primary">Download CV</a></li> -->
+										<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
 									</ul>
 								</footer>
 							</section>
@@ -166,29 +259,24 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<section>
+						<!-- <section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
 							<ul class="actions">
 								<li><a href="generic.html" class="button">Learn More</a></li>
 							</ul>
-						</section>
+						</section> -->
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Contact</h2>
+							<p>Reach out if you would to discuss XR, HCI, Games and VFX over coffee. If you find yourself at IIT Bombay, look for the guy roaming around whilst wearing a Unity T-Shirt.</p>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd><a href="#">amarnath2105@gmail.com</a></dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://github.com/AmarnathMurugan" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/amarnathmurugan/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://twitter.com/Amar_5261" target="_blank" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>								
 							</ul>
 						</section>
 						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
