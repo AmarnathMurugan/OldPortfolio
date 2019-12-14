@@ -74,6 +74,15 @@
 													<p id="timeframe">October 2019</p>
 													<p>An Ad placement asset for AR/VR with a dynamic pricing model</p>
 											</li>
+											
+
+											<!-- Anatomy -->
+											<li onclick="document.getElementById('anatomy').style.display='block'">
+												<span class="image"><img src="images/featured projects/anatomy/icon.JPG" alt=""  /></span>
+													<h3>AnatomyMR</h3>
+													<p id="timeframe">Fall 2019</p>
+													<p>A multi-user mixed reality platform for medical education that allows for dynamic content updation</p>
+											</li>
 
 											<!-- ARtifacts -->
 											<li onclick="document.getElementById('artifacts').style.display='block'">
@@ -85,12 +94,7 @@
 
 										
 
-											<!-- Anatomy -->
-											<li onclick="document.getElementById('anatomy').style.display='block'">
-													<span class="icon major style5 fa-gem"></span>
-													<h3>AnatomyMR</h3>
-													<p>A multi-user mixed reality platform for medical education that allows for dynamic content updation</p>
-											</li>
+										
 
 										</ul>
 									
@@ -136,7 +140,7 @@
 											</header>
 											<div >
 												<p>
-														ScholAR is a research project that is exploring how effective AR-based educational content can be democratized and deployed in schools, especially in rural schools. The project is being undertaken as part of Pratiti Sarkar's Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
+													ScholAR is a research project that is exploring how effective AR-based educational content can be democratized and deployed in schools, especially in rural schools. The project is being undertaken as part of <a href="https://scholar.google.com/citations?user=-QElsWoAAAAJ&hl=en" target="_blank">Pratiti Sarkar</a>'s Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
 												</p>
 												<p>
 														The school kids who used the application are either seeing AR for the first time (in the case of urban schools), or handling a tablet itself for the first time (at rural schools), so we had to design the experience around this constraint. For the rural schoolkids, the app had minimal UI, and most of the interactions were gesture-based. The application was also built such that all the interactions were logged and stored for analysis.  The project had investigated how the differnet stakeholders in a child's education perceive the usage of AR in schools and their expectations. Furthermore, experiments were conducted to understand the group dynamics fostered while using AR in a collaborative learning environment. 
@@ -148,7 +152,7 @@
 													   </div>
 												</p>
 												<p>
-														With results obtained from these studies, the project will is moving towards a deployable solution, wherein technical constraints that impede scalaiblity are being addressed.
+														With results obtained from these studies, the project is moving towards a deployable solution, wherein technical constraints that impede scalaiblity are being addressed.
 
 												</p>
 											
@@ -317,13 +321,26 @@
 								<div id="anatomy" class="w3-modal">
 									<div class="w3-modal-content w3-animate-opacity w3-card-4">
 										<header > 
-											<span onclick="document.getElementById('anatomy').style.display='none'" 
+											<span onclick="document.getElementById('anatomy').style.display='none'; stopVideo()" 
 											class="button">&times;</span>
-											<h2>test</h2>
+											<h2>AnatomyMR</h2>
 										</header>
 										<div >
-											<p>This is an ongoing project that has been in the works since summer 2018. It started as part of my internship under the guidance of Prof. Jayesh Pillai. We were initially exploring the idea of dynamically altering the visuals of a VR film in areas that are beyond the field of view of the viewer. This approach led to the current framework, Cinévoqué, whose name is a portmanteau of the words Cinema and Evoke, which espouses the ability of the framework to evoke a narrative that corresponds to the viewer's gaze behavior over the course of the movie.
+											<p>
+												This was my bachelor's thesis project, which I worked on along with my classmate  Balaji Ganesh. It was undertaken in collaboration with SRM Medical Colege. The broader goal of this project was to create a platform for mixed reality that holds educational content that can be consumed in a multi-user environment. Furthermore, the platform had to support addition of new content post-deployment. 
 											</p>
+
+											<p>
+												We were able to implement dynamic content addition and retrieval in the networked environment, with extra transform interactions added as well. We used Dreamworld's Dreamglass AR HMD for the hardware and developed the application in Unity.  The networked experience was created through Unity's in-built networking solution Unet (it is currently deprecated). We used Amazon AWS to store and retrieve the content that would be shown on the platform. For this project, we had 3d models of the heart and lungs obtained from MRI scans, which were optimized further for use in AR. I also created models of cellular structures such as alveoli to support a use case of explaining a concept at different levels of scales.
+											</p>
+											
+											<p>
+												This project was built based on a proof of concept mixed application I developed during my internship in the year before for the hololens, the demo of the same is shown below.
+												<div class="imgcontainer">	
+													<iframe width="560" height="315" style="padding: 0%;" src="https://www.dropbox.com/s/nvwy538obzo89hg/HoloLens%20Anatomy.mp4?raw=1" frameborder="0" allowfullscreen id="anatomyvideo"></iframe>
+												</div>
+											</p>
+
 										</div>										
 									</div>			
 								</div>
@@ -394,6 +411,22 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			var stopVideo = function ( ) {
+
+				var videos = document.querySelectorAll('iframe, video');
+				Array.prototype.forEach.call(videos, function (video) {
+				if (video.tagName.toLowerCase() === 'video') {
+					video.pause();
+				} else {
+					var src = video.src;
+					video.src = src;
+				}
+				});
+			};
+			
+			</script>
 
 	</body>
 </html>
