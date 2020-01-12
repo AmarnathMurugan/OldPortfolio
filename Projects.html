@@ -59,6 +59,14 @@
 												<p>Exploratory project that alters the virutal environment based on inputs from musical instruments, to create a visual intuition for music theory</p>
 											</li>
 
+											<!-- Networked Expeirences -->
+											<li onclick="document.getElementById('Network').style.display='block'">
+												<span class="image"><img src="images/featured projects/network/bait_icon.JPG" alt=""  /></span>
+													<h3>Multiplayer XR and Games</h3>
+													<p id="timeframe">November 2019 - December 2019</p>
+													<p>A set of multiplayer projects deployed in different platforms</p>
+											</li>
+
 											<!-- Gro -->
 											<li onclick="document.getElementById('Gro').style.display='block'">
 												<span class="image"><img src="images/featured projects/gro/gro.jpg" alt=""  /></span>
@@ -201,6 +209,52 @@
 											</div>										
 										</div>			
 								</div>
+
+								<div id="Network" class="w3-modal">
+									<div class="w3-modal-content w3-animate-opacity w3-card-4">
+										<header > 
+											<span onclick="document.getElementById('Network').style.display='none'" 
+											class="button">&times;</span>
+											<h2>Multiplayer XR and Games</h2>
+										</header>
+										<div >
+											<p>
+												This is a compilation of three different projects that are multiplayer experiences. The first application is an AR game that I implemented as part of a student's (Shraddha Dhodi) project, which was about exploring new co-op game mechanics in a virtually co-located AR space. The second application is an android game that is an implementation of another student's project (Aishwary Khobragade), it sought to identify elements that foster cooperation in a game and how they differ from the ones that create conflict. Finally, the last application was built as part of a hackathon; it is an experience that allows musical collaboration through VR using digital twins of the instrument.
+											</p>
+											<p>
+													<h3>Door2Door</h3>
+													The motivation of this project was to leverage AR to create a multiplayer collaborative game for users who are not physically co-located. Door2Door was the result of the project; it's a puzzle-based AR game where two players are able to see the avatar of the other through a portal. Clues to solve the puzzles are shown to the players on the other side portal, but the clues on their side wouldn't be visible to them1. As a result, they have to communicate with each other through text or voice and solve the puzzles together. 
+													<div class="imgcontainer">		
+																												
+															<img src="images/featured projects/network/door5.gif" alt="" style="width: 50%;" /> 
+															
+												   </div>
+											</p>
+											<p>
+												<h3>Bait</h3>
+												This an android game that was built to create a cooperative gaming experience. Each player assumes control over a school of fish, and they are tasked with collecting small crystals spread around the map. These collectibles must be deposited at a single location on the map as they replenish the health of the central deity; in this case, it is a larger crystal. Failing to deposit the collectibles frequently would end the game.  The map is also riddled with predators that attack the fishes if they are close. They could be evaded by getting out of the line of sight, or they could be repelled when two or more players bring together their schools of fishes. This mechanic serves as the cooperative aspect of the game and presents the players with the options to either help the deity or the player(s) under attack. 
+												<div class="imgcontainer">		
+																											
+														<img src="images/featured projects/network/bait1.JPG" alt="" style="width: 50%;" /> 
+														<img src="images/featured projects/network/bait2.jpg" alt="" style="width: 50%;" />	 														
+											   </div>
+
+											</p>
+
+											<p>
+												<h3>Midichlorians</h3>
+												This is a hack I worked on along with Rishi Vanukuru during Music Hack Day, Mumbai. We wanted to use the hackathon as a means to prototype new features for our previous project on VR and music.  The final application worked as follows: on one end, a person with a midi controller played the notes and was able to see a digital twin of the same reacting on a screen; another person in a different physical location was able to see and interact with the same digital twin in a VR environment. The goal of this was to create a collaborative VR environment for jam sessions or for teaching music remotely. To espouse the teaching side of the hack, we added a feature for the person using the physical midi controller, which highlighted keys they could play next so that it sounds good with the keys they player prior. Our application won the <strong> best music hack </strong> in the end.
+												<div class="imgcontainer">		
+																											
+													<img src="images/featured projects/network/mhd1.jpg" alt="" style="width: 50%;" /> 
+													<img src="images/featured projects/network/mhd2.jpg" alt="" style="width: 50%;" />	 																
+											   </div>
+
+											</p>
+										
+										</div>										
+									</div>			
+								</div>
 									
 								<div id="Gro" class="w3-modal">
 										<div class="w3-modal-content w3-animate-opacity w3-card-4">
@@ -272,7 +326,7 @@
 								<div id="artifacts" class="w3-modal">
 										<div class="w3-modal-content w3-animate-opacity w3-card-4">
 											<header > 
-												<span onclick="document.getElementById('artifacts').style.display='none'" 
+												<span onclick="document.getElementById('artifacts').style.display='none' ;stopVideo()" 
 												class="button">&times;</span>
 												<h2>ARtifacts</h2>
 											</header>
@@ -294,7 +348,7 @@
 												</p>
 												<p>		
 														The final demo: 
-														<div class="imgcontainer">	
+														<div class="imgcontainer" name="youtubevideo">	
 														<iframe width="560" height="315" style="padding: 0%;" src="https://www.youtube.com/embed/XP-QVg8O-Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 														</div>
 														 <br>
@@ -321,7 +375,7 @@
 								<div id="anatomy" class="w3-modal">
 									<div class="w3-modal-content w3-animate-opacity w3-card-4">
 										<header > 
-											<span onclick="document.getElementById('anatomy').style.display='none'; stopVideo()" 
+											<span onclick="document.getElementById('anatomy').style.display='none'; stopVideo();" 
 											class="button">&times;</span>
 											<h2>AnatomyMR</h2>
 										</header>
@@ -336,8 +390,9 @@
 											
 											<p>
 												This project was built based on a proof of concept mixed application I developed during my internship in the year before for the hololens, the demo of the same is shown below.
-												<div class="imgcontainer">	
-													<iframe width="560" height="315" style="padding: 0%;" src="https://www.dropbox.com/s/nvwy538obzo89hg/HoloLens%20Anatomy.mp4?raw=1" frameborder="0" allowfullscreen id="anatomyvideo"></iframe>
+												<div class="imgcontainer" name="youtubevideo">	
+													<!-- <iframe width="560" height="315" style="padding: 0%;" src="https://www.dropbox.com/s/nvwy538obzo89hg/HoloLens%20Anatomy.mp4?raw=1" frameborder="0" allowfullscreen id="anatomyvideo"></iframe> -->
+													<iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/xmNWQsq0eHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowscriptaccess="always" allowfullscreen></iframe>
 												</div>
 											</p>
 
@@ -372,34 +427,9 @@
 					</div>
 
 				<!-- Footer -->
-					<!-- <footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer> -->
+					 <footer id="footer">						
+						<p class="copyright"> Derivative of a template by <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer> 
 
 			</div>
 
@@ -413,17 +443,34 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
-			var stopVideo = function ( ) {
+			// var stopVideo = function ( ) {
+			// 	console.log("called");
+			// 	var videos = document.querySelectorAll('iframe, video');
+			// 	Array.prototype.forEach.call(videos, function (video) {
+			// 	// if (video.tagName.toLowerCase() === 'video') {
+			// 	// 	video.pause();
+			// 	// } else {
+			// 	// 	var src = video.src;
+			// 	// 	video.src = src;
+			// 	// }
+			// 	video.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+			// 	});
+			// };
 
-				var videos = document.querySelectorAll('iframe, video');
-				Array.prototype.forEach.call(videos, function (video) {
-				if (video.tagName.toLowerCase() === 'video') {
-					video.pause();
-				} else {
-					var src = video.src;
-					video.src = src;
-				}
-				});
+			var stopVideo = function(){
+					var myScope = document.getElementsByName('youtubevideo');      
+					//otherwise set scope as the entire document
+					//var myScope = document;
+					console.log(myScope.length);
+					for (var j = 0; j < myScope.length; j++) {
+					var iframes = myScope[j].getElementsByTagName("iframe");
+					if (iframes != null) {
+						for (var i = 0; i < iframes.length; i++) {
+							iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
+							
+						}
+					}
+					}
 			};
 			
 			</script>
