@@ -160,45 +160,45 @@
 									</div>
 								
 									<div id="Procedural" class="w3-modal">
-											<div class="w3-modal-content w3-animate-opacity w3-card-4">
-												<header > 
-													<span onclick="document.getElementById('Procedural').style.display='none'" 
-													class="button">&times;</span>
-													<h2>Visual Intuition for music in VR</h2>
-												</header>
-												<div >
-													<p> 
-														<h3>Background</h3>
-	
-															This project was started during Prof Jayesh Pillai's VR course; after I joined IDC School of Design as an RA. While assisting the M.Des student groups with project development, I got the opportunity to join one of them and work on this project. 
-															My teammates  <a href="https://www.behance.net/Maulashree" target="_blank">Maulashree Shanbhag</a> and <a href="https://rishivanukuru.com/" target="_blank">Rishi Vanukuru</a> and I wanted to explore the possibility of creating a visual intuition for music theory by immersing users into an experience where the virtual environment changes according to the music played by the user.
-															<br><br>											
-														<h3>implementation</h3>
-	
-															We used an HTC VIVE with leap motion, and an extra vive tracker attached to the keyboard for aligning the virtual and physical keyboard, the midi data from the same was sent to our application to provide feedback.
-															 
-															<br><br>
+										<div class="w3-modal-content w3-animate-opacity w3-card-4">
+											<header > 
+												<span onclick="document.getElementById('Procedural').style.display='none'" 
+												class="button">&times;</span>
+												<h2>Visual Intuition for music in VR</h2>
+											</header>
+											<div >
+												<p> 
+													<h3>Background</h3>
+
+														This project was started during Prof Jayesh Pillai's VR course; after I joined IDC School of Design as an RA. While assisting the M.Des student groups with project development, I got the opportunity to join one of them and work on this project. 
+														My teammates  <a href="https://www.behance.net/Maulashree" target="_blank">Maulashree Shanbhag</a> and <a href="https://rishivanukuru.com/" target="_blank">Rishi Vanukuru</a> and I wanted to explore the possibility of creating a visual intuition for music theory by immersing users into an experience where the virtual environment changes according to the music played by the user.
+														<br><br>											
+													<h3>implementation</h3>
+
+														We used an HTC VIVE with leap motion, and an extra vive tracker attached to the keyboard for aligning the virtual and physical keyboard, the midi data from the same was sent to our application to provide feedback.
+														 
+														<br><br>
+														<div class="imgcontainer">
+															<img src="images/featured projects/procedural/setup.jpeg" alt="" />
+														</div>
+														<br>	
+														The experience consists of two levels.Initially, to onboard the user, an underwater environment is shown with the virtual keyboard in front of them; when they press a key, a school of fish is spawned, which is driven by the BOIDS algorithm. 
+														As the user continues to play the instrument, the school changes its location accordingly to indicate that they are affected by the input. Once the user is comfortable with the experience, we move them to the next level, where they surface near an archipelago. Each island is mapped to an octave, and the topology of the island changes when a key within its octave is pressed.  
+														<br><br>
 															<div class="imgcontainer">
-																<img src="images/featured projects/procedural/setup.jpeg" alt="" />
+																<video width="50%" autoplay loop muted>
+																	<source src="images/featured projects/procedural/demo.m4v" type="video/mp4">
+																
+																Your browser does not support the video tag.
+																</video>
 															</div>
-															<br>	
-															The experience consists of two levels.Initially, to onboard the user, an underwater environment is shown with the virtual keyboard in front of them; when they press a key, a school of fish is spawned, which is driven by the BOIDS algorithm. 
-															As the user continues to play the instrument, the school changes its location accordingly to indicate that they are affected by the input. Once the user is comfortable with the experience, we move them to the next level, where they surface near an archipelago. Each island is mapped to an octave, and the topology of the island changes when a key within its octave is pressed.  
-															<br><br>
-																<div class="imgcontainer">
-																	<video width="50%" autoplay loop>
-																		<source src="images/featured projects/procedural/demo.m4v" type="video/mp4">
-																	
-																	Your browser does not support the video tag.
-																	</video>
-																</div>
-															<br>
-														<h3>Future Work</h3>
-															The project is a work in progress. We would like to add more features and improve the quality of the experience. For the technical side, I am planning to implement this with recent features of unity such as, ECS, Job System and the Burst Compiler for possible optimizations. We also intended to do a more rigorous literature review for finding better mappings between the keyboard inputs and terrain modifications. 
-	
-													</p>
-												</div>										
-											</div>			
+														<br>
+													<h3>Future Work</h3>
+														The project is a work in progress. We would like to add more features and improve the quality of the experience. For the technical side, I am planning to implement this with recent features of unity such as, ECS, Job System and the Burst Compiler for possible optimizations. We also intended to do a more rigorous literature review for finding better mappings between the keyboard inputs and terrain modifications. 
+
+												</p>
+											</div>										
+										</div>	
 									</div>
 
 								<footer class="major">
