@@ -46,7 +46,7 @@
 										<header class="major">
 											<h2>Hi there! I'm Amarnath</h2>
 										</header>
-										I am a Research assistant at the <a href="https://imxd.in">IMXD Lab</a>, IDC School of Design, IIT Bombay. My specialization is in Extended Reality, and I have been collaborating with pioneering startups and researchers in the field for almost four years. My research is currently focused on narratives, education and novel interaction techniques in XR.  Moving forward, I hope to focus on digital humans, and graphics in immersive environments. Previously I was a student ambassador for Unity Technologies and a team lead for the Extended Reality research group at <a href="https://www.nexttechlab.io" >Next Tech Lab</a>.
+										I am a Research Associate at the <a href="https://imxd.in">IMXD Lab</a>, IDC School of Design, IIT Bombay. My specialization is in Extended Reality, and I have been collaborating with pioneering startups and researchers in the field for almost four years. My research is currently focused on narratives, education and novel interaction techniques in XR.  Moving forward, I hope to focus on digital humans, and graphics in immersive environments. Previously I was a student ambassador for Unity Technologies and a team lead for the Extended Reality research group at <a href="https://www.nexttechlab.io" >Next Tech Lab</a>.
 										
 										<!-- <p>I am a research assistant at IDC School of Design, IIT Bombay. I recently graduated 
 										with a bachelor's in Computer Science and have been working on AR/VR and game dev over
@@ -72,6 +72,15 @@
 									<h2>Featured Projects</h2>
 								</header>
 								<ul class="features">
+										<!-- graphicsprogramming -->
+										<li onclick="document.getElementById('graphicsprogramming').style.display='block'">
+											<span class="image"><img src="images/featured projects/graphicsProgramming/non uniform.png" alt=""  /></span>
+											<h3>Graphics Programming</h3>
+											<p id="timeframe">Mar 2020 - ongoing</p>
+											<p>Raytracing, Shaders and Interactive graphics projects</p>
+											
+										</li>
+
 										<!-- Cinevoque -->
 										<li onclick="document.getElementById('cinevoque').style.display='block'">
 												<span class="image"><img src="images/featured projects/cinevoque/Cine.JPG" alt=""  /></span>
@@ -81,21 +90,13 @@
 												
 											</li>
 
-											<!-- ScholAR -->
-											<li onclick="document.getElementById('ScholAR').style.display='block'">
-												<span class="image"><img src="images/featured projects/Scholar/icon.jpg" alt=""  /></span>
-												<h3>ScholAR</h3>
-												<p id="timeframe">June 2018 - ongoing</p>
-												<p>Research project that aims to make affordable AR based educational solutions for underserved kids in rural India</p>
-											</li>
-
-											<!-- Procedural -->
-											<li onclick="document.getElementById('Procedural').style.display='block'">
-												<span class="image"><img src="images/featured projects/procedural/icon.jpg" alt=""  /></span>
-												<h3>Visual Intuition for music in VR</h3>
-												<p id="timeframe">August 2019 - ongoing</p>
-												<p>Exploratory project that alters the virutal environment based on inputs from musical instruments, to create a visual intuition for music theory</p>
-											</li>
+										<!-- ScholAR -->
+										<li onclick="document.getElementById('ScholAR').style.display='block'">
+											<span class="image"><img src="images/featured projects/Scholar/icon.jpg" alt=""  /></span>
+											<h3>ScholAR</h3>
+											<p id="timeframe">June 2018 - ongoing</p>
+											<p>Research project that aims to make affordable AR based educational solutions for underserved kids in rural India</p>
+										</li>
 								</ul>
 								<!-- modals -->
 								<div id="cinevoque" class="w3-modal">
@@ -131,74 +132,109 @@
 									</div>
 									
 									<div id="ScholAR" class="w3-modal">
-											<div class="w3-modal-content w3-animate-opacity w3-card-4">
-												<header > 
-													<span onclick="document.getElementById('ScholAR').style.display='none'" 
-													class="button">&times;</span>
-													<h2>ScholAR</h2>
-												</header>
-												<div >
-													<p>
-															ScholAR is a research project that is exploring how effective AR-based educational content can be democratized and deployed in schools, especially in rural schools. The project is being undertaken as part of <a href="https://scholar.google.com/citations?user=-QElsWoAAAAJ&hl=en" target="_blank">Pratiti Sarkar</a>'s Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
-													</p>
-													<p>
-															The school kids who used the application are either seeing AR for the first time (in the case of urban schools), or handling a tablet itself for the first time (at rural schools), so we had to design the experience around this constraint. For the rural schoolkids, the app had minimal UI, and most of the interactions were gesture-based. The application was also built such that all the interactions were logged and stored for analysis.  The project had investigated how the differnet stakeholders in a child's education perceive the usage of AR in schools and their expectations. Furthermore, experiments were conducted to understand the group dynamics fostered while using AR in a collaborative learning environment. 
-															<div class="imgcontainer">		
-																														
-																	<img src="images/featured projects/Scholar/image--010.jpg" alt="" style="width: 34%;" /> 
-																	<img src="images/featured projects/Scholar/image--012.jpg" alt="" style="width: 34%;" />	
-																	<img src="images/featured projects/Scholar/image--014.jpg" alt=""  style="width: 34%;"/> 														
-														   </div>
-													</p>
-													<p>
-															With results obtained from these studies, the project is moving towards a deployable solution, wherein technical constraints that impede scalaiblity are being addressed.
-	
-													</p>
-												
-												</div>										
-											</div>			
-									</div>
-								
-									<div id="Procedural" class="w3-modal">
 										<div class="w3-modal-content w3-animate-opacity w3-card-4">
 											<header > 
-												<span onclick="document.getElementById('Procedural').style.display='none'" 
+												<span onclick="document.getElementById('ScholAR').style.display='none'" 
 												class="button">&times;</span>
-												<h2>Visual Intuition for music in VR</h2>
+												<h2>ScholAR</h2>
 											</header>
 											<div >
-												<p> 
-													<h3>Background</h3>
+												<p>
+													ScholAR is a research project that is exploring how  AR-based educational content can be democratized and deployed in schools. The project is being undertaken as part of <a href="https://scholar.google.com/citations?user=-QElsWoAAAAJ&hl=en" target="_blank">Pratiti Sarkar</a>'s Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
+													
+													<h3>Scholar for Classrooms</h3>
+													
+													This part of the project focused on scaffolding classroom sessions with AR based content moderated by the teacher. This is proposed to provide a more enganging and interactive learning experience compared to solutions like smartboards. We have focused on building and testing AR content for maths, specifically for geometry over the last three years. Our expeirments explored learning efficacy, collaboration and interactions in rural schools where classes were held using our applications. Our apps were also built based on pedagogical models to help the students better grasp the concepts.
 
-														This project was started during Prof Jayesh Pillai's VR course; after I joined IDC School of Design as an RA. While assisting the M.Des student groups with project development, I got the opportunity to join one of them and work on this project. 
-														My teammates  <a href="https://www.behance.net/Maulashree" target="_blank">Maulashree Shanbhag</a> and <a href="https://rishivanukuru.com/" target="_blank">Rishi Vanukuru</a> and I wanted to explore the possibility of creating a visual intuition for music theory by immersing users into an experience where the virtual environment changes according to the music played by the user.
-														<br><br>											
-													<h3>implementation</h3>
+													I was reponsible for building the apps and further helped with content creation and experiments. 
 
-														We used an HTC VIVE with leap motion, and an extra vive tracker attached to the keyboard for aligning the virtual and physical keyboard, the midi data from the same was sent to our application to provide feedback.
-														 
-														<br><br>
-														<div class="imgcontainer">
-															<img src="images/featured projects/procedural/setup.jpeg" alt="" />
+														<div class="imgcontainer">				
+																<img src="images/featured projects/Scholar/image--010.jpg" alt="" style="width: 34%;" /> 
+																<img src="images/featured projects/Scholar/image--012.jpg" alt="" style="width: 34%;" />	
+																<img src="images/featured projects/Scholar/image--014.jpg" alt=""  style="width: 34%;"/>
+													   </div>
+													   <div class="imgcontainer">	
+															<img src="images/featured projects/Scholar/rocket.gif" alt="" autoplay loop />
+															<img src="images/featured projects/Scholar/Vertex.gif" alt=""  autoplay loop/>
+											 		  </div>
+													  
+													   <h3>Scholar for Remote Learning</h3>
+													   
+													   Due to the COVID-19 pandemic we starting working on a remote learning solution that could bridge the work we have done for physical classrooms. I created a prototype that focused on creating a virtual classroom where the teacher is able to control a shared AR artefact and teach concepts to students who are spatially present in the virtual space. Visual cues & spatial audio were added to give a better sense of other users’ relative position. Depending on the active artifact, the users could place a marker or draw on top, and these interactions are reflected for everyone in the session. We had conducted preliminary tests with students from our department to better understand the opportunities and challenges that arise as a consequence.
+
+													   <br><br>
+
+													   <div class="imgcontainer" name="youtubevideo">
+													   <iframe width="840" height="473" src="https://www.youtube.com/embed/FhA2svVtDHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 														</div>
-														<br>	
-														The experience consists of two levels.Initially, to onboard the user, an underwater environment is shown with the virtual keyboard in front of them; when they press a key, a school of fish is spawned, which is driven by the BOIDS algorithm. 
-														As the user continues to play the instrument, the school changes its location accordingly to indicate that they are affected by the input. Once the user is comfortable with the experience, we move them to the next level, where they surface near an archipelago. Each island is mapped to an octave, and the topology of the island changes when a key within its octave is pressed.  
-														<br><br>
-															<div class="imgcontainer">
-																<video width="50%" autoplay loop muted>
-																	<source src="images/featured projects/procedural/demo.m4v" type="video/mp4">
-																
-																Your browser does not support the video tag.
-																</video>
-															</div>
+
+														Apart from education this project also brought out challenges that extend beyond the educational use case of Scholar, for example, the best avatar representation for mobile AR. With just the positional information of the hand held device it may not be possible to create avatars with the similar accuracy as those in VR or HMD based devices. I have taken up the lead in this work, where we study avatars that vary in both visual and behavioural fidelity. The following image shows the avatar space in our study.
+
+														<div class="imgcontainer">	
+															<img src="images/featured projects/Scholar/avatarspace.png" alt="" style="width: 98%;" />
+											 		  	</div>
+
+														The following video demonstrates both direct and procedural networked avatars in our current prototype
 														<br>
-													<h3>Future Work</h3>
-														The project is a work in progress. We would like to add more features and improve the quality of the experience. For the technical side, I am planning to implement this with recent features of unity such as, ECS, Job System and the Burst Compiler for possible optimizations. We also intended to do a more rigorous literature review for finding better mappings between the keyboard inputs and terrain modifications. 
+
+														<div class="imgcontainer" name="youtubevideo">
+															<iframe width="840" height="473" src="https://www.youtube.com/embed/1Z8081hyhGU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+														</div>
 
 												</p>
+											
 											</div>										
-										</div>	
+										</div>			
+								</div>
+								
+									<div id="graphicsprogramming" class="w3-modal">
+										<div class="w3-modal-content w3-animate-opacity w3-card-4">
+											<header > 
+												<span onclick="document.getElementById('graphicsprogramming').style.display='none'" 
+												class="button">&times;</span>
+												<h2>Graphics Programming</h2>
+											</header>
+											<div >
+													<h3>Raytracing</h3>												
+	
+													<p>This is my first graphics project. Following the <a href="https://raytracing.github.io/" target="_blank">Raytracing in one weekend</a> ebook series, I implemented a Raytracer from scratch in C++. The project served as an useful refresher for the maths used in graphics and contexualized the concepts. It also helped me learn some advanced and new concepts in C++.
+	
+													The first book focused on implementing vector math functions, rays, ray-sphere interactions, shading, aliasing, positionable camera and lens blur. The following images show scnens that implement all the above mentioned features.
+													<div class="imgcontainer">
+														<img src="images/featured projects/graphicsProgramming/render.png" alt="" />
+														<img src="images/featured projects/graphicsProgramming/Output.png" alt="" />
+													</div>
+	
+													The second book covered more advanced topics such as motion blur, BVH, procedural textures, image texture mapping, lights and volumes. Beyond the contents of the book I had implemented multi-threading and non-uniform volumes. The code for the project can be found <a href="https://github.com/AmarnathMurugan/Raytracing" target="_blank">here</a>.
+	
+																								
+													<div class="imgcontainer">
+														<img src="images/featured projects/graphicsProgramming/rtnw_final.png" alt="" />
+														<img src="images/featured projects/graphicsProgramming/Cornell Box.png" alt="" style="width:25%;"/>										
+													</div>
+	
+													<div class="imgcontainer">													
+														<img src="images/featured projects/graphicsProgramming/Diffuse Lights.png" alt="" />
+														<img src="images/featured projects/graphicsProgramming/non uniform.png" alt="" style="width:25%;"/>
+													</div>
+													<br>
+	
+													<h3>Shaders</h3>
+													
+													After the raytracing projects I have implemented a couple of shaders in <a href="https://www.shadertoy.com/user/AmarnathMurugan" target="_blank">Shadertoy</a>. The first was an interactive mandelbrot set, which served as a refresher for complex math and its uses in graphics. The second shader is an interactive mandelbulb, which helped me understand raymarching and SDFs.
+													
+													<div class="imgcontainer">													
+														<img src="images/featured projects/graphicsProgramming/mandelbrot.jpg" alt="" />
+														<img src="images/featured projects/graphicsProgramming/mandelbulb.jpg" alt="" />
+													</div>							
+													Additionally, I have implemented custom shaders in Unity as part of my work in IMXD lab. Which would be updated here after the completion of those projects.
+													<br><br>
+													<h3>Next Steps</h3>
+													
+													Recently I've come across multiple graphics courses that were published publicly, and have been going through them while trying to complete the assignments. Currently I'm following Prof Keenan Crane's <a href="http://15462.courses.cs.cmu.edu/spring2020/" target="_blank"> Computer Graphics course (CMU 15-462/662) </a> and Prof Cem Yuksel's <a href="https://graphics.cs.utah.edu/courses/cs6610/spring2021/" target="_blank">Interactive Computer Graphics (CS 5610/6610)</a>. The completed assignments of the Interactive CG course are being updated <a href="https://github.com/AmarnathMurugan/InteractiveGraphicsProjects" target="_blank">here</a>.
+												</div>
+	
+										</div>			
 									</div>
 
 								<footer class="major">
@@ -217,7 +253,7 @@
 								</header>
 								<ul style="text-align: justify;">
 									<li>
-										<p><strong> Amarnath Murugan</strong>,Rishi Vanukuru, and Jayesh Pillai. "Towards Avatars for Remote Communication using Mobile Augmented Reality. " IEEE VR 2021 Workshop: Virtual Humans and Crowds in Immersive Environments (in  press).</p>
+										<p><strong>Amarnath Murugan</strong>,Rishi Vanukuru, and Jayesh Pillai. "Towards Avatars for Remote Communication using Mobile Augmented Reality. " IEEE VR 2021 Workshop: Virtual Humans and Crowds in Immersive Environments (in  press).</p>
 									</li>
 									<li>
 										<p>Vanukuru, Rishi,<strong> Amarnath Murugan</strong> , and Jayesh Pillai. "Dual Phone AR: Exploring the use of Phones as Controllers for Mobile Augmented Reality." 26th ACM Symposium on Virtual Reality Software and Technology. 2020.</p>
@@ -232,7 +268,7 @@
 									</li>
 
 									<li>
-										<p><strong> Murugan, Amarnath</strong>, Jayesh S. Pillai, and Amal Dev. "Cinévoqué: Development of a Passively Responsive Framework for Seamless Evolution of Experiences in Immersive Live-Action Movies." 25th ACM Symposium on Virtual Reality Software and Technology. ACM, 2019.</p>
+										<p><strong>Amarnath Murugan</strong>, Jayesh S. Pillai, and Amal Dev. "Cinévoqué: Development of a Passively Responsive Framework for Seamless Evolution of Experiences in Immersive Live-Action Movies." 25th ACM Symposium on Virtual Reality Software and Technology. ACM, 2019.</p>
 									</li>
 
 									<li>
@@ -240,7 +276,7 @@
 									</li>
 
 									<li>
-										<p><strong> Murugan, Amarnath</strong>, Ganesh A. Balaji, and R. Rajkumar. "AnatomyMR: A Multi-User Mixed Reality Platform for Medical Education." Journal of Physics: Conference Series. Vol. 1362. No. 1. IOP Publishing, 2019.</p>
+										<p><strong>Amarnath Murugan</strong>, Ganesh A. Balaji, and R. Rajkumar. "AnatomyMR: A Multi-User Mixed Reality Platform for Medical Education." Journal of Physics: Conference Series. Vol. 1362. No. 1. IOP Publishing, 2019.</p>
 									</li>
 
 									<li>

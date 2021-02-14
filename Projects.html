@@ -33,13 +33,20 @@
 								<!-- Image -->
 									<section>
 										<ul class="features">
+											<!-- graphicsprogramming -->
+											<li onclick="document.getElementById('graphicsprogramming').style.display='block'">
+												<span class="image"><img src="images/featured projects/graphicsProgramming/non uniform.png" alt=""  /></span>
+												<h3>Graphics Programming</h3>
+												<p id="timeframe">Mar 2020 - ongoing</p>
+												<p>Raytracing, Shaders and Interactive graphics projects</p>												
+											</li>
 
 											<!-- Cinevoque -->
 											<li onclick="document.getElementById('cinevoque').style.display='block'">
 												<span class="image"><img src="images/featured projects/cinevoque/Cine.JPG" alt=""  /></span>
 												<h3>Cinévoqué</h3>
 												<p id="timeframe">June 2018 - ongoing</p>
-												<p>A passively responsive real-time framework for live-action Cinematic VR</p>
+												<p>Passively responsive real-time framework for live-action VR films</p>
 												
 											</li>
 
@@ -48,7 +55,7 @@
 												<span class="image"><img src="images/featured projects/Scholar/icon.jpg" alt=""  /></span>
 												<h3>ScholAR</h3>
 												<p id="timeframe">June 2018 - ongoing</p>
-												<p>Research project that aims to make affordable AR based educational solutions for underserved kids in rural India</p>
+												<p>Mobile AR for classrooms and remote learning</p>
 											</li>
 
 											<!-- Procedural -->
@@ -56,7 +63,7 @@
 												<span class="image"><img src="images/featured projects/procedural/icon.jpg" alt=""  /></span>
 												<h3>Visual Intuition for music in VR</h3>
 												<p id="timeframe">August 2019 - ongoing</p>
-												<p>Exploratory project that alters the virutal environment based on inputs from musical instruments, to create a visual intuition for music theory</p>
+												<p>Music based reponsive procedural environment</p>
 											</li>
 
 											<!-- Networked Expeirences -->
@@ -72,7 +79,7 @@
 												<span class="image"><img src="images/featured projects/gro/gro.jpg" alt=""  /></span>
 													<h3>Gro</h3>
 													<p id="timeframe">September 2019</p>
-													<p> Design of a digital ID card for school kids that doubles up as a banking device.  </p>
+													<p> Design of a digital ID card for kids that doubles up as a banking device  </p>
 											</li>
 
 											<!-- AdsXR -->
@@ -80,7 +87,7 @@
 													<span class="image"><img src="images/featured projects/adsXR/icon.jpg" alt=""  /></span>
 													<h3>AdsXR</h3>
 													<p id="timeframe">October 2019</p>
-													<p>An Ad placement asset for AR/VR with a dynamic pricing model</p>
+													<p>Ad placement asset for AR/VR with a dynamic pricing model</p>
 											</li>
 											
 
@@ -89,7 +96,7 @@
 												<span class="image"><img src="images/featured projects/anatomy/icon.JPG" alt=""  /></span>
 													<h3>AnatomyMR</h3>
 													<p id="timeframe">Fall 2019</p>
-													<p>A multi-user mixed reality platform for medical education that allows for dynamic content updation</p>
+													<p>Multi-user mixed reality platform for medical education</p>
 											</li>
 
 											<!-- ARtifacts -->
@@ -97,7 +104,7 @@
 												<span class="image"><img src="images/featured projects/artifacts/team.jpg" alt=""  /></span>
 													<h3>ARtifacts</h3>
 													<p id="timeframe">April 2017</p>
-													<p>Android app that leverages AR and VR for improving museum experiences - Hackathon winner </p>
+													<p>Android app that leverages AR and VR for improving museum experiences </p>
 											</li>
 
 										
@@ -138,6 +145,56 @@
 
 									</div>			
 								</div>
+
+								<div id="graphicsprogramming" class="w3-modal">
+									<div class="w3-modal-content w3-animate-opacity w3-card-4">
+										<header > 
+											<span onclick="document.getElementById('graphicsprogramming').style.display='none'" 
+											class="button">&times;</span>
+											<h2>Graphics Programming</h2>
+										</header>
+										<div >
+												<h3>Raytracing</h3>												
+
+												<p>This is my first graphics project. Following the <a href="https://raytracing.github.io/" target="_blank">Raytracing in one weekend</a> ebook series, I implemented a Raytracer from scratch in C++. The project served as an useful refresher for the maths used in graphics and contexualized the concepts. It also helped me learn some advanced and new concepts in C++.
+
+												The first book focused on implementing vector math functions, rays, ray-sphere interactions, shading, aliasing, positionable camera and lens blur. The following images show scnens that implement all the above mentioned features.
+												<div class="imgcontainer">
+													<img src="images/featured projects/graphicsProgramming/render.png" alt="" />
+													<img src="images/featured projects/graphicsProgramming/Output.png" alt="" />
+												</div>
+
+												The second book covered more advanced topics such as motion blur, BVH, procedural textures, image texture mapping, lights and volumes. Beyond the contents of the book I had implemented multi-threading and non-uniform volumes. The code for the project can be found <a href="https://github.com/AmarnathMurugan/Raytracing" target="_blank">here</a>.
+
+																							
+												<div class="imgcontainer">
+													<img src="images/featured projects/graphicsProgramming/rtnw_final.png" alt="" />
+													<img src="images/featured projects/graphicsProgramming/Cornell Box.png" alt="" style="width:25%;"/>										
+												</div>
+
+												<div class="imgcontainer">													
+													<img src="images/featured projects/graphicsProgramming/Diffuse Lights.png" alt="" />
+													<img src="images/featured projects/graphicsProgramming/non uniform.png" alt="" style="width:25%;"/>
+												</div>
+												<br>
+
+												<h3>Shaders</h3>
+												
+												After the raytracing projects I have implemented a couple of shaders in <a href="https://www.shadertoy.com/user/AmarnathMurugan" target="_blank">Shadertoy</a>. The first was an interactive mandelbrot set, which served as a refresher for complex math and its uses in graphics. The second shader is an interactive mandelbulb, which helped me understand raymarching and SDFs.
+												
+												<div class="imgcontainer">													
+													<img src="images/featured projects/graphicsProgramming/mandelbrot.jpg" alt="" />
+													<img src="images/featured projects/graphicsProgramming/mandelbulb.jpg" alt="" />
+												</div>							
+												Additionally, I have implemented custom shaders in Unity as part of my work in IMXD lab. Which would be updated here after the completion of those projects.
+												<br><br>
+												<h3>Next Steps</h3>
+												
+												Recently I've come across multiple graphics courses that were published publicly, and have been going through them while trying to complete the assignments. Currently I'm following Prof Keenan Crane's <a href="http://15462.courses.cs.cmu.edu/spring2020/" target="_blank"> Computer Graphics course (CMU 15-462/662) </a> and Prof Cem Yuksel's <a href="https://graphics.cs.utah.edu/courses/cs6610/spring2021/" target="_blank">Interactive Computer Graphics (CS 5610/6610)</a>. The completed assignments of the Interactive CG course are being updated <a href="https://github.com/AmarnathMurugan/InteractiveGraphicsProjects" target="_blank">here</a>.
+											</div>
+
+									</div>			
+								</div>
 								
 								<div id="ScholAR" class="w3-modal">
 										<div class="w3-modal-content w3-animate-opacity w3-card-4">
@@ -148,19 +205,46 @@
 											</header>
 											<div >
 												<p>
-													ScholAR is a research project that is exploring how effective AR-based educational content can be democratized and deployed in schools, especially in rural schools. The project is being undertaken as part of <a href="https://scholar.google.com/citations?user=-QElsWoAAAAJ&hl=en" target="_blank">Pratiti Sarkar</a>'s Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
-												</p>
-												<p>
-														The school kids who used the application are either seeing AR for the first time (in the case of urban schools), or handling a tablet itself for the first time (at rural schools), so we had to design the experience around this constraint. For the rural schoolkids, the app had minimal UI, and most of the interactions were gesture-based. The application was also built such that all the interactions were logged and stored for analysis.  The project had investigated how the differnet stakeholders in a child's education perceive the usage of AR in schools and their expectations. Furthermore, experiments were conducted to understand the group dynamics fostered while using AR in a collaborative learning environment. 
-														<div class="imgcontainer">		
-																													
+													ScholAR is a research project that is exploring how  AR-based educational content can be democratized and deployed in schools. The project is being undertaken as part of <a href="https://scholar.google.com/citations?user=-QElsWoAAAAJ&hl=en" target="_blank">Pratiti Sarkar</a>'s Ph.D. and is funded by the Tata Center for Technology and Design. I have been developing the AR applications used in the experiments while also assisting in conducting them.
+													
+													<h3>Scholar for Classrooms</h3>
+													
+													This part of the project focused on scaffolding classroom sessions with AR based content moderated by the teacher. This is proposed to provide a more enganging and interactive learning experience compared to solutions like smartboards. We have focused on building and testing AR content for maths, specifically for geometry over the last three years. Our expeirments explored learning efficacy, collaboration and interactions in rural schools where classes were held using our applications. Our apps were also built based on pedagogical models to help the students better grasp the concepts.
+
+													I was reponsible for building the apps and further helped with content creation and experiments. 
+
+														<div class="imgcontainer">				
 																<img src="images/featured projects/Scholar/image--010.jpg" alt="" style="width: 34%;" /> 
 																<img src="images/featured projects/Scholar/image--012.jpg" alt="" style="width: 34%;" />	
-																<img src="images/featured projects/Scholar/image--014.jpg" alt=""  style="width: 34%;"/> 														
+																<img src="images/featured projects/Scholar/image--014.jpg" alt=""  style="width: 34%;"/>
 													   </div>
-												</p>
-												<p>
-														With results obtained from these studies, the project is moving towards a deployable solution, wherein technical constraints that impede scalaiblity are being addressed.
+													   <div class="imgcontainer">	
+															<img src="images/featured projects/Scholar/rocket.gif" alt="" autoplay loop />
+															<img src="images/featured projects/Scholar/Vertex.gif" alt=""  autoplay loop/>
+											 		  </div>
+													  
+													   <h3>Scholar for Remote Learning</h3>
+													   
+													   Due to the COVID-19 pandemic we starting working on a remote learning solution that could bridge the work we have done for physical classrooms. I created a prototype that focused on creating a virtual classroom where the teacher is able to control a shared AR artefact and teach concepts to students who are spatially present in the virtual space. Visual cues & spatial audio were added to give a better sense of other users’ relative position. Depending on the active artifact, the users could place a marker or draw on top, and these interactions are reflected for everyone in the session. We had conducted preliminary tests with students from our department to better understand the opportunities and challenges that arise as a consequence.
+
+													   <br><br>
+
+													   <div class="imgcontainer" name="youtubevideo">
+													   <iframe width="840" height="473" src="https://www.youtube.com/embed/FhA2svVtDHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+														</div>
+
+														Apart from education this project also brought out challenges that extend beyond the educational use case of Scholar, for example, the best avatar representation for mobile AR. With just the positional information of the hand held device it may not be possible to create avatars with the similar accuracy as those in VR or HMD based devices. I have taken up the lead in this work, where we study avatars that vary in both visual and behavioural fidelity. The following image shows the avatar space in our study.
+
+														<div class="imgcontainer">	
+															<img src="images/featured projects/Scholar/avatarspace.png" alt="" style="width: 98%;" />
+											 		  	</div>
+
+														The following video demonstrates both direct and procedural networked avatars in our current prototype
+														<br>
+
+														<div class="imgcontainer" name="youtubevideo">
+															<iframe width="840" height="473" src="https://www.youtube.com/embed/1Z8081hyhGU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+														</div>
 
 												</p>
 											
@@ -349,9 +433,9 @@
 												<p>		
 														The final demo: 
 														<div class="imgcontainer" name="youtubevideo">	
-														<iframe width="560" height="315" style="padding: 0%;" src="https://www.youtube.com/embed/XP-QVg8O-Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+														<iframe width="840" height="473" style="padding: 0%;" src="https://www.youtube.com/embed/XP-QVg8O-Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 														</div>
-														 <br>
+														<br>
 
 														Our win even got us some attention from the press!
 														
@@ -392,7 +476,7 @@
 												This project was built based on a proof of concept mixed application I developed during my internship in the year before for the hololens, the demo of the same is shown below.
 												<div class="imgcontainer" name="youtubevideo">	
 													<!-- <iframe width="560" height="315" style="padding: 0%;" src="https://www.dropbox.com/s/nvwy538obzo89hg/HoloLens%20Anatomy.mp4?raw=1" frameborder="0" allowfullscreen id="anatomyvideo"></iframe> -->
-													<iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/xmNWQsq0eHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowscriptaccess="always" allowfullscreen></iframe>
+													<iframe class="youtube-video" width="840" height="473" src="https://www.youtube.com/embed/xmNWQsq0eHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowscriptaccess="always" allowfullscreen></iframe>
 												</div>
 											</p>
 
